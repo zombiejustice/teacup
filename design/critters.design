@@ -1,0 +1,11 @@
+I guess a lot of this will end up back in entities - but it may be that genetics stays its own module.
+
+Anyway, genemap format:
+    a pair of structures:
+        dictionary indexed by stat keys, containing tuples with (chromosome, gene) indices
+        list of chromosomes, each is a:
+            list of genes, each of which has as its value a stat key
+
+Statlist format:
+    a dict, indexed by stat keys:
+        pairs of [dominance, value]

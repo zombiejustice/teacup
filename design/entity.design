@@ -1,0 +1,84 @@
+Skills will be as a 2d array - or possibly an array thereof - with three
+sections: genetic, anatomical, skills
+
+NOPE!
+
+characteristics of critters:
+stance - sessile, quadroped, bipedal
+claws - none, gripping, weapon, blade-arm (requires biped)
+speaks - Bool
+grasp - none, non-stance (requires sessile or biped), all (requires quadroped or biped)
+
+NOPE!
+
+Gotta do it by limb:
+1 torso
+    1 heart
+    1 groin
+    0-2 heads
+        0, 2, or 4 mandibles
+        0-2 fangs
+        0-3 tusks
+        0-1 beak
+        2 or 4 audielles
+            0-1 ear
+        2-12 eyes
+    0-6 arms
+        1 hand or 1 blade-arm or 1 gun-arm
+            if hand, 0 or 4 nails
+    0-8 legs or roots
+        if leg, 1 hand or paw
+            if hand, 0 or 4 nails
+            if paw, 0 or 4 nails or claws
+
+Potential Attributes/Skills:
+    Defense - arms, legs, head, torso, groin
+    Dodge - arms, legs, head
+    Bash - arms, legs, head
+    Bite - mandibles, tusks, fangs, beaks
+    Kick - paws, legs
+    Rake - nails
+    Maul - claws, legs
+    Grappling - hands
+    Fencing - blade-arms, arms, hands
+    Gunnery - gun-arms, arms, hands
+    Heart - all 'Process' skills, Gunnery, Fencing
+    ...presumably others
+    
+Types of entities:
+Critters - can hold knowledge, can grow and learn and reproduce and make decisions and use magic
+Tools - can hold knowledge; may make decisions and learn and use magic (if magical)
+Furniture - can hold knowledge
+Consumables - may use magic (if a spell)
+
+
+plants, animals, yumanoids will be critters
+swords, guns, hammers, books will be tools
+Doors, stairs, forges, beds, ovens will be furniture
+plants, animal parts, spell packets will be consumables
+
+So:
+Critters have a heart, body (& parts), cants, and intelligence
+Tools may have skill modifiers (and intelligence and cants if magical)
+Furniture may have skill modifiers
+Consumables may have cants (if magical)
+
+Life Stages:
+Critters have three stages:
+Dormant - fruit, seed, egg, newborn
+Nymph - cub, sprout, sapling, child
+Adult - capable of reproduction
+
+Dormant stage determined by mother's genetics, both others by child's genetics
+
+
+Roadmap:
+
+_ Start with a critters, single bodypart, no tools or furniture.
+_ Make them breed and mate properly
+_ Make them interactable text-style, with fighting and hp.
+_ Make them leave consumable corpses.
+_ Make interacting with corpses possible.
+_ Then put them on a map.
+_ Once map stuff works all RL-like, then add more body parts.
+_ Then furniture and tools, robots, &c. Expand this later.

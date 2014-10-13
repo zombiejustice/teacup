@@ -1,0 +1,17 @@
+ALRIGHT!
+
+We're going back to the tiled globe!
+
+Each tile on the globe is one level with multiple exits!
+
+This solves basically all our problems!
+
+Each globe with have a 3D array of levels, some of which will take up multiple indices.
+The globe will also have values for the location of the sun and moon?
+
+
+Each level will have a 2D (3D?) array of tiles and a list of areas (for cheap simulation).
+
+So, we first construct a cube, and then around it, the 8-circumference globe.
+Thereafter, we add copies of the globe as we grow it to the interior every second (even) unit of circumference per quarter.
+We start out with a diameter:circumference ratio of under 1:3 and move towards 1:4. The actual number is D = C/4 +1.

@@ -1,0 +1,25 @@
+Main
+
+holds primary game logic and main loop
+passes focus back and forth between GUI and game state updates
+
+Should go:
+
+Get state relevant to player by interaction mode
+Pass state info to GUI for rendering
+Ask GUI for keypress
+Update interaction mode as necessary
+Adjust GUI as necessary
+Progress game state as necessary
+    repeat
+
+GUI
+
+holds all user input and user output functions
+should be standardized across libraries
+essentially chocolate and wrapper functions for whatever GUI library is in use
+
+Geography
+
+holds all terrain generation functions
+generates the globe at whatever size
