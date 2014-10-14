@@ -1,4 +1,4 @@
-/testmap.hrm (Human-Readable Map) for rl-one (working title)
+/testmap.hrm (Human-Readable Map) for teacup (working title)
 /file reader should ignore lines beginning with '/'
 /# for wall
 /all other characters treated as ground

@@ -10,10 +10,9 @@
 
 ### imports ###
 
-#import libtcod
-import sys
-sys.path.append('.\..\libtcod')
-import libtcodpy as libtcod
+#import curses
+import curses
+
 
 ### error buffer ###
 
@@ -47,13 +46,17 @@ assume_dvorak = True #assumes that user's keyboard is in dvorak by default
 ### set-up ###
 
 def window_init(fullscreen = False):
-#takes a boolean flag, fullscreen
+#takes a boolean flag, fullscreen, ignored in curses
 #returns True if no errors, o/w False
 #inits the console
 
     #init the console
-    libtcod.console_set_custom_font('./../libtcod/arial10x10.png', libtcod.FONT_TYPE_GREYSCALE | libtcod.FONT_LAYOUT_TCOD)
-    libtcod.console_init_root(80,50,'Teacup', fullscreen) #False on fullscreen mode
+    global stdscr
+    stdscr = curses.initscr()
+    curses.noecho()
+    curses.cbreak()
+    stdscr.keypad(1)
+
     return True
 
 #end window_init
@@ -62,11 +65,8 @@ def window_init(fullscreen = False):
 
 def toggle_fullscreen():
 #takes nothing
-#returns True if display is now fullscreen, False o/w
-#toggles the fullscreen-ness of the display
-    f = not libtcod.console_is_fullscreen()
-    libtcod.console_set_fullscreen(f)
-    return f    
+#returns False, in curses
+    return False    
 #end toggle_fullscreen
     
 def toggle_dvorak():
