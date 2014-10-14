@@ -82,7 +82,7 @@ if True: #placeholder until conditional newgame generation
 interaction_mode = 'crawl'
 while interaction_mode is not 'exit':
     #for later: get game state relevant to interaction_mode
-    #for later: send gui relevant infor to display
+    #for later: send gui relevant info to display
     #get action from gui
     action = gui.get_action()
     #respond to action
