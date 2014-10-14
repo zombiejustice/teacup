@@ -1,0 +1,35 @@
+GUI interfaces
+
+
+def get_errors():
+#takes nothing, returns nothing
+#prints all the errors in the error buffer to standard out
+
+def put_error(s):
+#takes a string, returns nothing
+#puts an error message in the error buffer
+
+def window_init(fullscreen = False):
+#takes a boolean flag, fullscreen
+#returns True if no errors, o/w False
+#inits the console
+
+def toggle_fullscreen():
+#takes nothing
+#returns True if display is now fullscreen, False o/w
+#toggles the fullscreen-ness of the display
+
+def toggle_dvorak():
+#takes nothing
+#returns True if key handler is now in dvorak, False o/w
+#toggles the key handler between dvorak and qwerty
+
+def get_action():
+#takes nothing
+#returns action string
+#handles keys, basically
+
+def debug_print(msg):
+#takes a msg to print
+#returns nothing
+#prints immediately

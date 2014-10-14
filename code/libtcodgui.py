@@ -130,4 +130,4 @@ def debug_print(msg):
 def debug_input():
 #takes nothing, returns a char
 #turns all non-char inputs to '0'
-if 
+	return "0" #what did I want this for??
